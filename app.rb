@@ -18,6 +18,10 @@ class App < Sinatra::Base
     @friends = ['Emily Wilding Davison', 'Harriet Tubman', 'Joan of Arc', 'Malala Yousafzai', 'Sojourner Truth']
  
   erb :friends
+  
+  @friends.each do |friend| %>
+    <h2><%= friend %></h2>
+<% end %>
 
   end
 end
